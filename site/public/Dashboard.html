@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela base</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="css/style-base.css">
+    <link rel="stylesheet" href="css/style-dashboard.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <img src="assets/Logo-transparent.png" alt="" width="100px">
+            <h1>DashBoard</h1>
+            <ul class="navbar">
+                <li class=""><a href="Index.html">Sair</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="background">
+        <div class="container containerstyle">
+            <div class="boxes firstbox">
+              <div class="eu">
+
+                <div class="box">
+                  <canvas id="myChart" style="position: relative; height:40vh; width:40vw"></canvas>
+                </div>
+              </div>
+                <div class="box">
+                    <canvas id="myChart2" style="position: relative; height:40vh; width:40vw"></canvas>
+                </div>
+                <div class="box">
+                    <canvas id="myChart3" style="position: relative; height:40vh; width:40vw"></canvas>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <canvas id="myChart4" style="position: relative; height:40vh; width:40vw"></canvas>
+                </div>
+                <div class="box">
+                    <canvas id="myChart5" style="position: relative; height:40vh; width:40vw"></canvas>
+                </div>
+                <div class="box">
+                    <canvas id="myChart6" style="position: relative; height:40vh; width:40vw"></canvas>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<div class="footer">
+    <div class="container">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    </div>
+</div>
+</body>
+<script>
+    const labels = ['1', '2', '3', '4', '5']
+
+    const data = {
+      labels: labels,
+      datasets: [
+        {
+          label: 'Temperatura',
+          backgroundColor: 'rgb(255, 99, 132)',
+          borderColor: 'rgb(255, 99, 132)',
+          data: [15, 13, 15, 17, 12]
+        },{
+          label: 'Umidade',
+          backgroundColor: 'rgb(0, 200, 255)',
+          borderColor: 'rgb(0, 200, 255)',
+          data: [12, 15.3, 16, 14.5, 11]
+        }
+      ]
+    }
+
+    const config = {
+      type: 'bar',
+      data: data,
+      options: {}
+    };
+    const labels2 = ['1', '2', '3', '4', '5']
+
+const data2 = {
+  labels: labels2,
+  datasets: [
+    {
+      label: 'Temperatura',
+      backgroundColor: 'rgb(255, 99, 132)',
+      borderColor: 'rgb(255, 99, 132)',
+      data: [56, 30, 12, 32, 20]
+    },{
+      label: 'Umidade',
+      backgroundColor: 'rgb(0, 200, 255)',
+      borderColor: 'rgb(0, 200, 255)',
+      data: [30, 20, 56, 15, 11]
+    }
+  ]
+}
+const config2 = {
+  type: 'bar',
+  data: data2,
+  options: {}
+};    const labels3 = ['1', '2', '3', '4', '5']
+
+const data3 = {
+  labels: labels3,
+  datasets: [
+    {
+      label: 'Temperatura',
+      backgroundColor: 'rgb(255, 99, 132)',
+      borderColor: 'rgb(255, 99, 132)',
+      data: [15, 12, 13, 17, 20]
+    },{
+      label: 'Umidade',
+      backgroundColor: 'rgb(0, 200, 255)',
+      borderColor: 'rgb(0, 200, 255)',
+      data: [12, 15.3, 16, 14.5, 11]
+    }
+  ]
+}
+
+const config3 = {
+  type: 'bar',
+  data: data3,
+  options: {}
+};
+const labels4 = ['1', '2', '3', '4', '5']
+
+const data4 = {
+labels: labels4,
+datasets: [
+{
+  label: 'Temperatura',
+  backgroundColor: 'rgb(255, 99, 132)',
+  borderColor: 'rgb(255, 99, 132)',
+  data: [12, 23, 26, 24, 23]
+},{
+  label: 'Umidade',
+  backgroundColor: 'rgb(0, 200, 255)',
+  borderColor: 'rgb(0, 200, 255)',
+  data: [23, 21, 51, 51, 23]
+}
+]
+}
+const config4 = {
+type: 'bar',
+data: data4,
+options: {}
+};    const labels5 = ['1', '2', '3', '4', '5']
+
+const data5 = {
+  labels: labels5,
+  datasets: [
+    {
+      label: 'Temperatura',
+      backgroundColor: 'rgb(255, 99, 132)',
+      borderColor: 'rgb(255, 99, 132)',
+      data: [15, 13, 15, 17, 12]
+    },{
+      label: 'Umidade',
+      backgroundColor: 'rgb(0, 200, 255)',
+      borderColor: 'rgb(0, 200, 255)',
+      data: [12, 15.3, 16, 14.5, 11]
+    }
+  ]
+}
+
+const config5 = {
+  type: 'bar',
+  data: data5,
+  options: {}
+};
+const labels6 = ['1', '2', '3', '4', '5']
+
+const data6 = {
+labels: labels6,
+datasets: [
+{
+  label: 'Temperatura',
+  backgroundColor: 'rgb(255, 99, 132)',
+  borderColor: 'rgb(255, 99, 132)',
+  data: [26, 23, 22, 21, 20]
+},{
+  label: 'Umidade',
+  backgroundColor: 'rgb(0, 200, 255)',
+  borderColor: 'rgb(0, 200, 255)',
+  data: [15, 16, 17, 18, 19]
+}
+]
+}
+const config6 = {
+type: 'bar',
+data: data6,
+options: {}
+}
+  </script>
+  <script>
+    const myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+    );
+    const myChart2 = new Chart(
+      document.getElementById('myChart2'),
+      config2
+    );
+    const myChart3 = new Chart(
+      document.getElementById('myChart3'),
+      config3
+    );const myChart4 = new Chart(
+      document.getElementById('myChart4'),
+      config4
+    );const myChart5 = new Chart(
+      document.getElementById('myChart5'),
+      config5
+    );const myChart6 = new Chart(
+      document.getElementById('myChart6'),
+      config6
+    )
+  </script>
+</html>

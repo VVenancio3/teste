@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de cadastro</title>
+    <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <img src="D:\Estudo\Faculdade\Sprint\SPRINT 2\assets\logo.jpeg" alt="" width="100px">
+            <h1>Néos Demétris</h1>
+            <ul class="navbar">
+                <li><input type="submit" id="bnt_submit1" value="Inicial"></li>
+                <li><input type="submit" id="bnt_submit2" value="Simulador"></li>
+                <li>|</li>
+                <li><input type="submit" id="bnt_submit3" value="Login"></li>
+                <li><input type="submit" id="bnt_submit" value="Cadastro"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="cadastro">
+            <div class="box">
+                    <h2>Cadastro</h2>
+                    <form id="register">
+                        <div class="full_box">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="Digite o seu e-mail" autofocus>
+                        </div>
+                        <div class="half_box spacing">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="name" id="name" placeholder="Digite o seu nome">  
+                        </div>
+                        <div class="half_box">
+                            <label for="cnpj">CNPJ</label>
+                            <input type="text" name="cnpj" id="cnpj" placeholder="Digite o seu CNPJ">  
+                        </div>
+                        <div class="half_box spacing">
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" id="senha" placeholder="Digite a sua senha">  
+                        </div>
+                        <div class="half_box">
+                            <label for="confimation">Confirmação de senha</label>
+                            <input type="password" name="confirmation" id="confirmation" placeholder="Confirme a sua senha">  
+                        </div>
+                        <div class="full_box">
+                            <input type="checkbox" name="agreement" id="agreement">  
+                            <label for="agreement" id="agreement">Eu li e aceito os <a href="http://www.pudim.com.br/">termos de uso</a></label>
+                        </div>
+                        <div class="full_box">
+                            <input type="submit" id="btn_submit" value="Registrar">  
+                        </div>
+                    </form>
+                    </p>
+                </div>
+                <p class="error-validation template"></p>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+</body>
+</html>

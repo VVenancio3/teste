@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    color: #323232;
+    border: none;
+}
+body {
+    background-color: black;
+}
+.header {
+    color: #039f00;
+    border-bottom: solid 3px #039f00;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+}
+h1 {
+    margin-top: 20px;
+    color: #039f00;
+    padding: 5px 15px;
+}
+.navbar {
+    display: flex;
+    width: 600px;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+}
+li {
+    color: #039f00;
+}
+.navbar input:focus {
+    border-bottom: solid 2px #323232;
+    border-color: #039f00;
+}
+li input {
+    margin-top: 25px;
+}
+.header input[type="submit"]{
+    background-color: black;
+    color: #039f00;
+}
+
+
+.cadastro {
+    height: 700px;
+    padding: 5vh;
+    background-image: linear-gradient( black, #039f00);
+    background-size: cover;
+}
+input, label{
+    display: block;
+    width: 100%;
+}
+input:focus, label:focus {
+    outline: none;
+}
+.box {
+    margin-top: 50px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: white;
+    padding: 25px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.full_box {
+    flex: 1 1 100%;
+    position: relative;
+}
+.half_box {
+    flex: 1 1 45%;
+}
+.spacing {
+    margin-right: 2.5%;
+}
+label {
+    font-weight: bold;
+    font-size: .8rem;
+}
+input {
+    border-bottom: solid 2px #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+}
+.box input:focus {
+    border-color: blue;
+}
+.box input[type="submit"]{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+#agreement{
+    margin-right: 5px;
+}
+#agreement, #agreement-label {
+    display: inline-block;
+    width: auto;
+}
+
+
+.footer {
+    background-color: #039f00;
+    height: 100px;
+    display: flex;
+}
+.footer .container{
+    display: flex;
+    justify-content: center;
+}

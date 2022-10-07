@@ -1,0 +1,41 @@
+.background .container .boxes {
+  background-color: rgb(43,47,52,90%);
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.containerstyle{
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+.box{
+  display: flex;
+  width: 350px;
+  height: 200px;
+  border-bottom: solid 3px #23272a;
+    border-right: solid 3px #23272a;
+    border-radius: 10px;
+    margin: 10px;
+    color: #ffffff;
+}
+.boxes{
+  display: flex;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+;
+}
+.firstbox{
+  padding-bottom: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+
+ 
+}
+.background{
+  height: auto;
+}

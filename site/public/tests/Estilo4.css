@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    color: #2c2f33;
+    border: none;
+}
+body {
+    background-color: black;
+}
+.header {
+    color: #039f00;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+}
+h1 {
+    margin-top: 30px;
+    color: #039f00;
+    padding: 5px 15px;
+}
+.navbar {
+    display: flex;
+    width: 600px;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+}
+li {
+    color: #039f00;
+}
+.navbar input:focus {
+    border-bottom: solid 2px #2c2f33;
+    border-color: #039f00;
+}
+li input {
+    margin-top: 30px;
+}
+.header input[type="submit"]{
+    background-color: black;
+    color: #039f00;
+}
+
+
+.register {
+    height: 700px;
+    padding: 5vh;
+    background-image: linear-gradient( black, #039f00);
+    background-size: cover;
+}
+input, label{
+    display: block;
+    width: 100%;
+}
+input:focus, label:focus {
+    outline: none;
+}
+.box {
+    margin-top: 90px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: rgb(43,47,52,90%);
+    padding: 25px;
+    border-bottom: solid 3px #23272a;
+    border-right: solid 3px #23272a;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+    color: 	#ffffff;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.full-box {
+    flex: 1 1 100%;
+    position: relative;
+}
+.spacing {
+    margin-right: 2.5%;
+}
+label {
+    font-weight: bold;
+    font-size: .8rem;
+    color: 	#ffffff;
+}
+input {
+    border-bottom: solid 2px #23272a;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+    color: 	#ffffff;
+    background-color: rgb(43,47,52,80%);
+}
+.box input:focus {
+    border-color: #039f00;
+}
+.box input[type="submit"]{
+    background-color: #039f00;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+a {
+    color: #039f00;
+}
+#agreement{
+    margin-right: 5px;
+}
+#agreement, #agreement-label {
+    display: inline-block;
+    width: auto;
+}
+
+
+.footer {
+    background-color: #039f00;
+    height: 100px;
+    display: flex;
+}
+.footer .container{
+    display: flex;
+    justify-content: center;
+}

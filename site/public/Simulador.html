@@ -1,0 +1,112 @@
+1<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Financeiro</title>
+    <link rel="stylesheet" href="css/style-base.css">
+    <link rel="stylesheet" href="css/style-simulador.css">
+</head>
+<body>
+    <div class="header">
+
+        <div class="container">
+            <img src="assets/Logo-transparent.png" alt="" width="100px">
+            <h1>Néos Demétris</h1>
+            <ul class="navbar">
+                <li class=""><a href="Index.html">Inicial</a></li>
+                <li class="here"><a href="">Simulador</a></li>
+                <li>|</li>
+                <li class=""><a href="Login.html">Login</a></li>
+                <li class=""><a href="Cadastro.html">Cadastro</a></li>
+            </ul>
+        </div>
+    </div>
+        <div class="backgroundsimu">
+        
+
+            <!-- Por que devemos calcular suas perdas e ganhos?
+                
+                <!-- Hoje a falta de monitoramento de controle de umidade e temperatura nos armazenamentos de soja,<br> acabam prejudicando você do segmento,
+                    fazendo com que perda cerca de 40% de sua colheita, trazendo um lucro bem inferior do que poderia conseguir!<br>
+                    
+                    Nós garantimos você conseguir ter uma safra com mais 30% de sucesso através da nossa solução!>
+                -->
+            
+            <div class="full-box" id="pergunta">
+            <h2>Simulador Financeiro</h2>
+            
+            <span>Hectares </span><input id="qtdhec" class="" placeholder="Digite a sua quantidade de hectares" autofocus> 
+            <span>Custo</span><input id="custhec" class="" placeholder="Digite o seu custo de plantil por hectare">
+            <span>Valor de venda</span><input id="vendsaca" class="" placeholder="Digite o valor de venda por saca"> 
+
+            <button onclick="validar()">Calcular</button>
+        
+        </div>
+
+        <div class="show-box" id="resposta">
+            <span id="mostrar" class="texto-resposta"></span>
+
+        </div>
+    
+    
+    </div>
+<div class="footer">
+    <div class="container">
+        <p>Néo Demetris Enterprises ®</p>
+    </div>
+</body>
+</html>
+<script>
+
+function validar(){
+
+
+
+if (qtdhec.value == "" || custhec.value == "" || vendsaca.value == ""){
+alert("Por favor, preencha todos os campos!")
+}
+else if(qtdhec.value == 0 || custhec.value == 0 || vendsaca.value == 0){
+alert("Digite um número válido")
+}   
+else {
+    calcular();
+}
+
+}
+
+    function calcular(){
+
+        
+        var hectare = 1
+        var plantasporhectare = 310000
+        var saca = 60
+        var venda = vendsaca.value;
+        var custo = custhec.value;
+        var qtdhectare = qtdhec.value;
+        
+        var totalplantas = plantasporhectare * qtdhectare;
+        var quantidadesacas = saca * qtdhectare;
+        var custototal = custo * qtdhectare;
+        var vendatotal = quantidadesacas * venda; 
+        var receitabrutasistema = vendatotal * 1.32;
+        var lucrosistema = (receitabrutasistema - custototal);
+        
+        pergunta.style.display="none";
+        resposta.style.display= "block";
+
+        
+        mostrar.innerHTML=`<h2>Sem a nossa solução: </h2> <br>`  + " " + `Você plantou ${qtdhectare} hectare(s), teve o total de ${totalplantas} de plantas por hectare,
+        custo de R$${custototal},você perdeu 52% da safra por falta de monitoramento e obteve uma receita bruta de R$ ${vendatotal},
+         onde o seu lucro foi R$ ${vendatotal - custototal}<br><br><br>`
+
+        mostrar.innerHTML+=`<h2> <b> Utilizando nossa solução: </b> </h2> <br>` + " " +
+         `Você plantou ${qtdhectare} hectare (s), teve o total de ${totalplantas} de plantas por hectare,
+        custo de R$${custototal}, com o nosso sistema monitorando 24 horas por dia,
+         você reduziu as suas perdas em 20% e obteve uma receita bruta de R$ ${receitabrutasistema}, onde o seu lucro foi R$ ${lucrosistema}`
+        }
+
+
+
+</script>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de cadastro</title>
+    <link rel="stylesheet" href="css/style-base.css">
+    <link rel="stylesheet" href="css/style-cadastro.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <img src="assets/Logo-transparent.png" alt="" width="100px">
+            <h1>Néos Demétris</h1>
+            <ul class="navbar">
+                <li class=""><a href="Index.html">Inicial</a></li>
+                <li class=""><a href="Simulador.html">Simulador</a></li>
+                <li>|</li>
+                <li class=""><a href="Login.html">Login</a></li>
+                <li class="here"><a href="">Cadastro</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="background">
+        <div class="">
+            <div class="box">
+                <h2>Cadastro</h2>
+                <form id="register">
+                    <div class="full-box">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Digite o seu e-mail" autofocus>
+                    </div>
+                    <div class="half-box spacing">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name" placeholder="Digite o seu nome">
+                    </div>
+                    <div class="half-box">
+                        <label for="cnpj">CNPJ</label>
+                        <input type="text" name="cnpj" id="cnpj" placeholder="Digite o seu CNPJ">
+                    </div>
+                    <div class="half-box spacing">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="senha" placeholder="Digite a sua senha">
+                    </div>
+                    <div class="half-box">
+                        <label for="confirmation">Confirmação de senha</label>
+                        <input type="password" name="confirmation" id="confirmation" placeholder="Confirma a sua senha">
+                    </div>
+                    <div class="full-box">
+                    <input type="checkbox" name="agreement" id="agreement">  
+                    <label for="agreement" id="agreement">Eu li e aceito os <a href="http://www.pudim.com.br/">termos de uso</a></label>
+                </div>
+                <div class="full-box">
+                    <button onclick="cadastrar()">Cadastrar</button>
+                </div>
+            </form>
+            </div>
+            <p class="error-validation template"></p>
+        </div>
+    </div>
+<div class="footer">
+    <div class="container">
+        <p>Néo Demetris Enterprises ®</p>
+    </div>
+</div>
+</body>
+</html>
